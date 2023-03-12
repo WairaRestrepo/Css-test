@@ -1,0 +1,15 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "node src/assets/js/index.js"
+  },
+  "keywords": [],
+  "author": "Omarvillada",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}

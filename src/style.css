@@ -1,0 +1,141 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');*/
+
+:root{
+    --background-color:#fff;
+    --title-color: #0fa89cea;
+    --text-color: black;
+    --icon-color:rgba(255, 0, 0, 0.366);
+
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:var(--background-color);
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.container{
+    width:100%;
+    height: auto;
+}
+
+.grup_container{
+background-color:var(--background-color);
+}
+
+.title{
+    color:var(--title-color);
+    font-size:20px;
+    margin-top:40px;
+    font-weight:200;/*mas delgada*/
+    text-align:center;
+}
+
+.row{
+    padding:5%;
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/* para que este uno debajo del otro*/
+    justify-items: center;
+    justify-content: center;
+    margin-bottom:40px;
+}
+
+.profile-card{
+    border-radius: 1rem;
+    box-shadow:0 1rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    overflow: hidden;
+    width:15rem;
+    backdrop-filter:blur(1rem);
+    background-color:rgba(225,225,225,0.60);
+    border:none;
+    transition: all 400ms ease;
+    
+}
+
+.profile-card:hover{
+    transform: translateY(-1.5%);
+}
+
+.profile-content{
+    padding:15px;
+}
+
+.profile-image{
+    text-align: center;
+}
+
+img{
+    width:80px;
+    height:80px;
+    border-radius:50px;
+    margin-bottom:2%;
+    margin-top: 5%;
+    align-items: center;
+}
+.profile-text p{
+    margin-top:3%;
+    padding-top:2%;
+    font-size:15px;
+    line-height:2em; /*Comúnmente se usa para establecer la distancia entre líneas de texto*/
+    margin-top: -10px;
+    color:var(--text-color);
+    text-align: center;
+    background-color:var(--background-color);
+
+}
+
+
+
+.btn-div{
+    padding-top:1%;
+    float: right;
+    padding-right:1%;
+    text-align: center;
+    transition: all 400ms ease;
+    width: 25px;
+}
+.btn-div:hover{
+    transform: translateY(-3%);
+}
+.btn-close{
+    background-color:var(--background-color);
+    width: 35px;
+    cursor: pointer;
+    height: 35px;
+    border:none;   
+}
+
+.iconestudio{
+    padding:0.5rem;
+    color:var(--text-color);
+}
+
+.iconestudio:hover{
+    background-color:var(--icon-color);
+    border-radius: 0.5rem;
+    color:var(--background-color);
+}
+
+@media(max-width:768px){
+    .row{
+        width: 100%;
+        font-size:18px;
+    }
+}
+
+@media(max-width:468px){
+    .profile-card{
+        width:290px;
+        height:250px;
+        font-size:18px;
+    }
+}
